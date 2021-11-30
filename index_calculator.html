@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main_calculator.css">
+    <title>電卓</title>
+</head>
+<body>
+    <table>
+      <tr>
+          <td class="dis" colspan="5">
+              <input type="text" id="display">
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="7" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="8" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="9" onclick="buttonclick(this)">
+        </td>
+        <td colspan="2">
+          <input type="button" value="AC" id="ACbutton" onclick="clearbutton(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="4" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="5" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="6" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="*" onclick="opebutton(this)">　　
+        </td>
+        <td>
+          <input type="button" value="/" onclick="opebutton(this)">    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="1" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="2" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="3" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="+" onclick="opebutton(this)">　　　
+        </td>
+        <td>
+          <input type="button" value="-" onclick="opebutton(this)">　　　
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="0" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="00" onclick="buttonclick(this)">
+        </td>
+        <td>
+          <input type="button" value="." onclick="buttonclick(this)">
+        </td>
+        <td colspan="2">
+          <input type="button" value="=" id="equalbutton" onclick="equal(this)">　　　
+        </td>
+      </tr>
+    </table>    
+  <script src="main_calculator.js"></script>
+</body>
+</html>
